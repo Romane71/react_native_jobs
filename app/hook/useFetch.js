@@ -34,11 +34,10 @@ const fetchData = async () => {
         (options);
 
         setData(response.data.data);
-        setIsLoading(false)
+        setIsLoading(false);
 
     } catch (error) {
         setError(error);
-        alert('There is an error')
     } finally {
      setIsLoading(false)
     }
